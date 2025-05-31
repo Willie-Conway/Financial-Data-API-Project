@@ -1,0 +1,70 @@
+/* frontend/styles/main.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+.search-section, .date-range {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.data-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+#chartContainer {
+    margin-top: 20px;
+    height: 400px;
+}
+
+.quote-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.quote-label {
+    font-weight: bold;
+}

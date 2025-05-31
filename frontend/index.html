@@ -1,0 +1,38 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Data Dashboard</h1>
+        
+        <div class="search-section">
+            <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)">
+            <button id="searchBtn">Get Quote</button>
+        </div>
+        
+        <div id="realTimeData" class="data-section hidden">
+            <h2>Real-Time Data</h2>
+            <div id="quoteDisplay"></div>
+        </div>
+        
+        <div class="historical-section">
+            <h2>Historical Data</h2>
+            <div class="date-range">
+                <input type="date" id="startDate">
+                <input type="date" id="endDate">
+                <button id="historicalBtn">Get Historical Data</button>
+            </div>
+            <div id="chartContainer"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

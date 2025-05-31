@@ -1,0 +1,41 @@
+financial-data-api/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── database.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── financial_data.py
+│   │   ├── routes/
+│   │   │   ├── __init__.py
+│   │   │   ├── stocks.py
+│   │   │   ├── historical.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── alpha_vantage.py
+│   │   │   ├── cache.py
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── test_api.py
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── alembic.ini
+│   ├── migrations/
+│   │   ├── env.py
+│   │   ├── versions/
+├── frontend/
+│   ├── index.html
+│   ├── styles/
+│   │   ├── main.css
+│   ├── scripts/
+│   │   ├── main.js
+│   ├── assets/
+├── .github/
+│   ├── workflows/
+│   │   ├── deploy.yml
+│   │   ├── test.yml
+├── .gitignore
+├── README.md
+├── LICENSE

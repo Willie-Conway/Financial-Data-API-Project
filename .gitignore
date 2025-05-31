@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+ENV/
+
+# Database
+*.sqlite3
+*.db
+
+# Redis
+dump.rdb
+
+# IDE
+.vscode/
+.idea/
+
+# Frontend
+node_modules/
+dist/
+
+# Environment variables
+.env
+.env.local
