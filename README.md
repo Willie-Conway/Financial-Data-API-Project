@@ -1,7 +1,7 @@
 
 # 📈 Financial Data API & Dashboard
 
-
+![Fast-API Dashboard](https://github.com/Willie-Conway/Financial-Data-API-Project/blob/bf54a4174eb83a4854e2887b845ec478ccbef603/Pics/Financial%20Data%20Dashboard.png)
 
 
 Welcome to the **Financial Data API & Dashboard** — a full-stack web application for retrieving, analyzing, and visualizing stock market data in real-time. Built with a robust FastAPI backend and a responsive JavaScript frontend, this project is perfect for investors, analysts, and developers seeking financial insights with beautiful visualizations.
