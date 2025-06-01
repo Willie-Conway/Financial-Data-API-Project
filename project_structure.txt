@@ -6,6 +6,7 @@ financial-data-api/
 │   │   ├── database.py
 │   │   ├── models/
 │   │   │   ├── __init__.py
+            ├── base.py
 │   │   │   ├── financial_data.py
 │   │   ├── routes/
 │   │   │   ├── __init__.py

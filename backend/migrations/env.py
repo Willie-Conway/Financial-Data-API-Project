@@ -1,18 +1,25 @@
-from logging.config import fileConfig
-from sqlalchemy import engine_from_config
-from sqlalchemy import pool
-from alembic import context
-import os
+# backend\migrations\env.py
+# import Base and models so tables get registered
 import sys
+import os
+from logging.config import fileConfig
 
-# Add the backend directory to the path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+from sqlalchemy import engine_from_config, pool
+from alembic import context
 
-from app.models.financial_data import Base
-from app.database import DATABASE_URL
+# Add the app root to sys.path (adjust path as needed)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app')))
 
+# Now you can import Base and models
+from models.base import Base
+import models.financial_data  # ensure models are loaded to register tables
+from database import DATABASE_URL  # your DATABASE_URL string
+
+# Alembic Config object
 config = context.config
 fileConfig(config.config_file_name)
+
+# This is the target metadata for 'autogenerate' support
 target_metadata = Base.metadata
 
 def run_migrations_offline():
@@ -37,7 +44,8 @@ def run_migrations_online():
 
     with connectable.connect() as connection:
         context.configure(
-            connection=connection, target_metadata=target_metadata
+            connection=connection,
+            target_metadata=target_metadata,
         )
 
         with context.begin_transaction():

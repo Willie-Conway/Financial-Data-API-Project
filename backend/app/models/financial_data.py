@@ -1,7 +1,7 @@
 # backend/app/models/financial_data.py
 
 from sqlalchemy import Column, Integer, String, Float, Date
-from . import Base
+from .base import Base
 
 class FinancialData(Base):
     __tablename__ = "financial_data"
