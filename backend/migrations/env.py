@@ -12,12 +12,15 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'a
 
 # Now you can import Base and models
 from models.base import Base
-import models.financial_data  # ensure models are loaded to register tables
+import models.financial_data  # Force evaluation of the model file
 from database import DATABASE_URL  # your DATABASE_URL string
 
 # Alembic Config object
 config = context.config
 fileConfig(config.config_file_name)
+
+from sqlalchemy import inspect
+print(">>> Base metadata tables:", Base.metadata.tables.keys())
 
 # This is the target metadata for 'autogenerate' support
 target_metadata = Base.metadata

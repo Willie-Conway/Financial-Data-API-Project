@@ -1,5 +1,5 @@
 // frontend/scripts/main.js
-const API_BASE_URL = 'https://your-backend-api-url.com'; // Replace with your actual backend URL
+const API_BASE_URL = 'https://localhost:8000'; // Replace with your actual backend URL
 
 document.getElementById('searchBtn').addEventListener('click', fetchRealTimeData);
 document.getElementById('historicalBtn').addEventListener('click', fetchHistoricalData);
