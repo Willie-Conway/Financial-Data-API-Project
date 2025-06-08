@@ -1,5 +1,5 @@
 
-# 📈 Financial Data API & Dashboard
+# 📈 Financial Data API 
 
 ![Fast-API Dashboard](https://github.com/Willie-Conway/Financial-Data-API-Project/blob/bf54a4174eb83a4854e2887b845ec478ccbef603/Pics/Financial%20Data%20Dashboard.png)
 
